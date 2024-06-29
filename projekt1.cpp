@@ -24,6 +24,13 @@ int main() {
 	cout << "1. Silnia" << endl;
         cin >> wyjscie;
 
+	if (wyjscie == 1) {
+		if (a < 0) {
+			cout << "Silnia nie jest zdefiniowana dla liczb ujemnych." << endl;
+		} else {
+			cout << "Silnia z " << a << " wynosi " << silnia(a) << endl;
+		}
+	}			
     } while(wyjscie != 0);
     return 0;
 }
