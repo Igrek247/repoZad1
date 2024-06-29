@@ -22,6 +22,7 @@ int main() {
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
+	cout << "2. Czy liczba jest pierwsza";
         cin >> wyjscie;
 	if (wyjscie == 2) {
             if (czyPierwsza(b)) {
@@ -30,7 +31,6 @@ int main() {
                 cout << "Liczba " << b << " nie jest  pierwsza." << endl;
             }
         }
-
     } while(wyjscie != 0);
     return 0;
 }
