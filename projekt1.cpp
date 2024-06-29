@@ -23,6 +23,14 @@ int main() {
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
         cin >> wyjscie;
+	if (wyjscie == 2) {
+            if (czyPierwsza(b)) {
+                cout << "Liczba " << b << " jest  pierwsza." << endl;
+            } else {
+                cout << "Liczba " << b << " nie jest  pierwsza." << endl;
+            }
+        }
+
     } while(wyjscie != 0);
     return 0;
 }
